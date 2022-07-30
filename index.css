@@ -8,6 +8,7 @@
     --main-ft: #999;
   }
 
+/* 
 @media (prefers-color-scheme: dark) {
     :root {
       --main-text1: #f5f5f5;
@@ -23,6 +24,7 @@
         filter: invert(2);
     }
 }
+*/
 
 body, html {
     margin: 0;
