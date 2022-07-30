@@ -1,0 +1,139 @@
+:root {
+    --main-text: #000a;
+    --main-sub: #999;
+    --main-op: #f5f5f5;
+    --main-bg: #f5f5f5;
+    --main-ft: #999;
+  }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --main-text: #f5f5f5;
+      --main-sub: #999;
+      --main-op: #f5f5f5;
+      --main-bg: #000;
+      --main-ft: #333;
+    }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: var(--main-text);
+    background-color: var(--main-bg);
+    transition: .5s;
+}
+  
+main {
+    position: relative;
+}
+  
+header {
+    margin-top: 3em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+header > img {
+    width: 6em;
+    height: 6em;
+    border-radius: 100%;
+}
+  
+header > h1 {
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 2em;
+    color: var(--main-text);
+}
+
+header > h2 {
+    display: inline-block;
+    font-size: 0.8em;
+    border-radius: 1em;
+    color: var(--main-sub);
+}
+
+footer {
+    clear: both;
+    margin-top: 3em;
+    padding: 10px 0;
+	color: var(--main-text);
+	font-size: 1em;
+	text-align: center;
+	background: var(--main-ft);
+}
+
+ul {
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 600px;
+}
+
+ul > h1 {
+    display: inline-block;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 1em;
+    background-color: var(--main-op);
+    color: var(--main-text);
+    padding: 0.3em 0.6em;
+    border: 1px solid var(--main-text);
+    transition: .5s;
+}
+
+ul > li {
+    background-color: var(--main-text);
+    border-radius: 1em;
+    margin: 1.4em 0;
+}
+
+ul > li:hover {
+    background-color: var(--main-op);
+    border-radius: 1em;
+    margin: 1.4em 0;
+    outline: 2px solid var(--main-text);
+}
+
+ul > li:hover > a > img {
+    filter: invert(1);
+}
+
+ul > li > a {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em;
+}
+
+a {
+    color: var(--main-op);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--main-text);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.statusbtn {
+    background-color: #3cb371;
+    border-radius: 1em;
+    margin: 1.4em 0;
+}
+
+.statusbtn:hover {
+    background-color: var(--main-op);
+    border-radius: 1em;
+    margin: 1.4em 0;
+    outline: 2px solid #3cb371;   
+}
