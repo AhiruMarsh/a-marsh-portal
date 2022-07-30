@@ -1,6 +1,8 @@
 :root {
-    --main-text: #000a;
+    --main-text1: #000a;
+    --main-text2: #000a;
     --main-sub: #999;
+    --main-btn: #000a;
     --main-op: #f5f5f5;
     --main-bg: #f5f5f5;
     --main-ft: #999;
@@ -8,11 +10,17 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-      --main-text: #f5f5f5;
+      --main-text1: #f5f5f5;
+      --main-text2: #000a;
       --main-sub: #999;
+      --main-btn: #999;
       --main-op: #f5f5f5;
       --main-bg: #000;
       --main-ft: #333;
+    }
+
+    ul > li:hover > a > img:hover {
+        filter: invert(2);
     }
 }
 
@@ -20,7 +28,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: var(--main-text);
+    color: var(--main-text1);
     background-color: var(--main-bg);
     transition: .5s;
 }
@@ -48,7 +56,7 @@ header > h1 {
     font-size: 1.2em;
     font-weight: bold;
     border-radius: 2em;
-    color: var(--main-text);
+    color: var(--main-text1);
 }
 
 header > h2 {
@@ -62,7 +70,7 @@ footer {
     clear: both;
     margin-top: 3em;
     padding: 10px 0;
-	color: var(--main-text);
+	color: var(--main-text2);
 	font-size: 1em;
 	text-align: center;
 	background: var(--main-ft);
@@ -82,14 +90,14 @@ ul > h1 {
     font-weight: bold;
     border-radius: 1em;
     background-color: var(--main-op);
-    color: var(--main-text);
+    color: var(--main-text2);
     padding: 0.3em 0.6em;
-    border: 1px solid var(--main-text);
+    border: 1px solid var(--main-text2);
     transition: .5s;
 }
 
 ul > li {
-    background-color: var(--main-text);
+    background-color: var(--main-btn);
     border-radius: 1em;
     margin: 1.4em 0;
 }
@@ -98,7 +106,7 @@ ul > li:hover {
     background-color: var(--main-op);
     border-radius: 1em;
     margin: 1.4em 0;
-    outline: 2px solid var(--main-text);
+    outline: 2px solid var(--main-text2);
 }
 
 ul > li:hover > a > img {
@@ -120,7 +128,7 @@ a {
 }
 
 a:hover {
-    color: var(--main-text);
+    color: var(--main-text2);
     font-weight: bold;
     text-decoration: none;
 }
