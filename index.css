@@ -1,36 +1,38 @@
 :root {
-    --main-text1: #000a;
-    --main-text2: #000a;
-    --main-sub: #999;
-    --main-btn: #000a;
-    --main-op: #f5f5f5;
+    --main-text: #000a;
+    --main-text-hover: #f5f5f5;
+    --main-text-h2: #999;
     --main-bg: #f5f5f5;
     --main-ft: #999;
+    --btn-color: #000a;
+    --btn-color-hover: #f5f5f5;
+    --btn-out-color: #000a;
+    --btn-img-iv: 0;
+    --btn-img-hover-iv: 1;
   }
 
-/* 
+
 @media (prefers-color-scheme: dark) {
     :root {
-      --main-text1: #f5f5f5;
-      --main-text2: #000a;
-      --main-sub: #999;
-      --main-btn: #999;
-      --main-op: #f5f5f5;
+      --main-text: #f5f5f5;
+      --main-text-hover: #000a;
+      --main-text-h2: #999;
       --main-bg: #000;
       --main-ft: #333;
-    }
-
-    ul > li:hover > a > img:hover {
-        filter: invert(2);
+      --btn-color: #fff;
+      --btn-color-hover: #000;
+      --btn-out-color: #f5f5f5;
+      --btn-img-iv: 1;
+      --btn-img-hover-iv: 0;
     }
 }
-*/
+
 
 body, html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    color: var(--main-text1);
+    color: var(--main-text);
     background-color: var(--main-bg);
     transition: .5s;
 }
@@ -58,21 +60,20 @@ header > h1 {
     font-size: 1.2em;
     font-weight: bold;
     border-radius: 2em;
-    color: var(--main-text1);
+    color: var(--main-text);
 }
 
 header > h2 {
     display: inline-block;
     font-size: 0.8em;
     border-radius: 1em;
-    color: var(--main-sub);
+    color: var(--main-text-h2);
 }
 
 footer {
     clear: both;
-    margin-top: 3em;
+    margin-top: auto;
     padding: 10px 0;
-	color: var(--main-text2);
 	font-size: 1em;
 	text-align: center;
 	background: var(--main-ft);
@@ -91,28 +92,32 @@ ul > h1 {
     font-size: 0.8em;
     font-weight: bold;
     border-radius: 1em;
-    background-color: var(--main-op);
-    color: var(--main-text2);
+    background-color: var(--main-bg);
+    color: var(--main-text);
     padding: 0.3em 0.6em;
-    border: 1px solid var(--main-text2);
+    border: 1px solid var(--btn-out-color);
     transition: .5s;
 }
 
 ul > li {
-    background-color: var(--main-btn);
+    background-color: var(--btn-color);
     border-radius: 1em;
     margin: 1.4em 0;
 }
 
 ul > li:hover {
-    background-color: var(--main-op);
+    background-color: var(--btn-color-hover);
     border-radius: 1em;
     margin: 1.4em 0;
-    outline: 2px solid var(--main-text2);
+    outline: 2px solid var(--btn-out-color);
+}
+
+ul > li > a > img {
+    filter: invert(var(--btn-img-iv));
 }
 
 ul > li:hover > a > img {
-    filter: invert(1);
+    filter: invert(var(--btn-img-hover-iv));
 }
 
 ul > li > a {
@@ -122,17 +127,22 @@ ul > li > a {
     align-items: center;
     gap: 0.5em;
     padding: 1em;
+    color: var(--main-text-hover);
+    text-decoration: none;
+}
+
+ul > li > a:hover {
+    color: var(--main-text);
+    font-weight: bold;
+    text-decoration: none;
 }
 
 a {
-    color: var(--main-op);
-    text-decoration: none;
+    color: var(--main-text);
 }
 
 a:hover {
-    color: var(--main-text2);
-    font-weight: bold;
-    text-decoration: none;
+    color: var(--main-text-hover);
 }
 
 .statusbtn {
@@ -142,7 +152,7 @@ a:hover {
 }
 
 .statusbtn:hover {
-    background-color: var(--main-op);
+    background-color: var(--btn-color-hover);
     border-radius: 1em;
     margin: 1.4em 0;
     outline: 2px solid #3cb371;   
