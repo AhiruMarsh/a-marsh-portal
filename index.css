@@ -59,22 +59,19 @@ header > h1 {
     display: inline-block;
     font-size: 1.2em;
     font-weight: bold;
-    border-radius: 2em;
     color: var(--main-text);
 }
 
 header > h2 {
     display: inline-block;
     font-size: 0.8em;
-    border-radius: 1em;
     color: var(--main-text-h2);
 }
 
 footer {
     clear: both;
-    margin-top: auto;
-    padding: 10px 0;
-	font-size: 1em;
+    padding: 10px;
+	font-size: 0.8em;
 	text-align: center;
 	background: var(--main-ft);
 }
@@ -156,4 +153,10 @@ a:hover {
     border-radius: 1em;
     margin: 1.4em 0;
     outline: 2px solid #3cb371;   
+}
+
+.statusbtn:hover > a {
+    color: #3cb371;
+    font-weight: bold;
+    text-decoration: none;
 }
