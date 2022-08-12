@@ -3,7 +3,6 @@
     --main-text-hover: #f5f5f5;
     --main-text-h2: #999;
     --main-bg: #f5f5f5;
-    --main-ft: #999;
     --btn-color: #000a;
     --btn-color-hover: #f5f5f5;
     --btn-out-color: #000a;
@@ -17,8 +16,7 @@
       --main-text: #f5f5f5;
       --main-text-hover: #000a;
       --main-text-h2: #999;
-      --main-bg: #000;
-      --main-ft: #333;
+      --main-bg: #212529;
       --btn-color: #fff;
       --btn-color-hover: #000;
       --btn-out-color: #f5f5f5;
@@ -84,7 +82,6 @@ footer {
     padding: 10px 0;
 	font-size: 0.8em;
     gap: 0.5em;
-	background: var(--main-ft);
 }
 
 ul {
@@ -112,11 +109,12 @@ ul > li {
     border-radius: 1em;
     margin: 1.5em 0;
     transition: all .3s ease;
+    border: 1.5px solid var(--btn-color);
 }
 
 ul > li:hover {
-    background-color: var(--btn-color-hover);
-    outline: 1.5px solid var(--btn-out-color);
+    background-color: var(--main-bg);
+    border: 1.5px solid var(--btn-out-color);
 }
 
 ul > li > a > img {
@@ -156,11 +154,12 @@ a:hover {
     border-radius: 1em;
     margin: 1.5em 0;
     transition: all 0.3s ease;
+    border: 1.5px solid #3cb371;   
 }
 
 .statusbtn:hover {
-    background-color: var(--btn-color-hover);
-    outline: 1.5px solid #3cb371;   
+    background-color: var(--main-bg);
+    border: 1.5px solid #3cb371;   
 }
 
 .statusbtn:hover > a {
