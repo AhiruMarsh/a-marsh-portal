@@ -3,6 +3,7 @@
     --main-text-hover: #f5f5f5;
     --main-text-h2: #999;
     --main-bg: #f5f5f5;
+    --main-status-color: #3cb371;
     --btn-color: #000a;
     --btn-color-hover: #f5f5f5;
     --btn-out-color: #000a;
@@ -49,7 +50,8 @@ main {
 }
   
 header {
-    margin-top: 3em;
+    margin: 3em auto 0 auto;
+    padding: 1em 2em;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -110,7 +112,7 @@ ul > li {
     margin: 1.5em 0;
     padding: 0;
     transition: all .3s ease;
-    border: 1.5px solid var(--btn-color);
+    border: 1.5px solid var(--btn-out-color);
 }
 
 ul > li:hover {
@@ -157,8 +159,7 @@ hr {
 .info_block {
     box-sizing: border-box;
     list-style: none;
-    margin: auto;
-    padding: 1em 2em;
+    padding: 0;
     max-width: 600px;
     text-align: center;
 }
@@ -186,11 +187,21 @@ hr {
     color: #f5f5f5;  
 }
 
+.info_block > .info_status {
+    margin: 0 0 1.5em 0;
+    padding: 1em;
+    border-radius: 0 0 1em 1em;
+    background-color: var(--main-bg);
+    color: var(--main-text);
+    border: 1.5px solid var(--main-status-color);  
+}
+
 .info_block h1 {
     margin: 0;
     font-size: 1em;
     font-weight: bold;
     text-align: center;
+    justify-content: center;
     align-items: center;
 }
 
@@ -214,7 +225,7 @@ hr {
 
 .info_block .info_target {
     margin: 0;
-    font-size: 0.5em;
+    font-size: 0.8em;
     text-align: center;
 }
 
@@ -229,21 +240,60 @@ hr {
     text-align: right;
 }
 
+.info_status_block {
+    padding: 0 2em 0 2em;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+} 
+
+.info_status_block:hover {
+    background-color: var(--main-text-h2);
+    font-weight: bold;
+}
+
+.info_status_block > img {
+    font-size: 0.8em;
+    padding: 0 1em;
+}
+
 .statusbtn {
-    background-color: #3cb371;
+    background-color: var(--main-status-color);
     border-radius: 1em;
     margin: 1.5em 0;
     transition: all 0.3s ease;
-    border: 1.5px solid #3cb371;   
+    border: 1.5px solid var(--main-status-color); 
 }
 
 .statusbtn:hover {
     background-color: var(--main-bg);
-    border: 1.5px solid #3cb371;   
+    border: 1.5px solid var(--main-status-color);   
 }
 
 .statusbtn:hover > a {
-    color: #3cb371;
+    color: var(--main-status-color);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.statusbtn_2 {
+    background-color: var(--main-status-color);
+    border-radius: 1em 1em 0 0;
+    margin: 1.5em 0 0 0;
+    transition: all 0.3s ease;
+    border: 1.5px solid var(--main-status-color);   
+}
+
+.statusbtn_2:hover {
+    background-color: var(--main-bg);
+    border: 1.5px solid var(--main-status-color);   
+}
+
+.statusbtn_2:hover > a {
+    color: var(--main-status-color);
     font-weight: bold;
     text-decoration: none;
 }
