@@ -10,45 +10,46 @@
     <body>
         <header>
             <h1>mc.a-marsh.net</h1>
-            <h2></h2>
         </header>
         <ul>
-            <div class="info_block">
-                <div class="info">
-                    <h1>定期メンテナンス</h1>
-                    <p>下記日時の期間において、インフラ機器のメンテナンス作業を実施しています。<br>メンテナンス作業中は、対象サービスを利用することができません。</p>
-                    <p class="info_date">随時 08:00 〜 08:15</p>
-                    <p class="info_target"><span class="info_target_title">対象</span>Login Server</p>
+            <li class="block_info">
+                <h2>定期メンテナンス</h2>
+                <p>下記日時の期間において、インフラ機器のメンテナンス作業を実施しています。<br>メンテナンス作業中は、対象サービスを利用することができません。</p>
+                <div class="block_info_target">
+                    <span class="t_title">実施日時</span>
+                    <span class="t_detail">随時 08:00 〜 08:15</span>
                 </div>
-            </div>
-            <li class="statusbtn_2">
+                <div class="block_info_target">
+                    <span class="t_title">対象</span>
+                    <span class="t_detail">Login Server</span>
+                </div>
+            </li>
+            <li class="btn_status_attach1">
                 <a href="https://status.a-marsh.net/" target="_blank">
                     <img src="../images/info.svg" width="20" />
                     Service Status
                 </a>
             </li>
-            <div class="info_block">
-                <div class="info_status">
-                    <h1>ゲームサーバー稼働状況</h1>
-                    <div class="info_status_block">
-                        <p class="info_status_target">Login Server</p>
-                        <img src="https://status.a-marsh.net/api/badge/2/status?upLabel=稼働中&downLabel=メンテナンス中" />
+            <li class="block_info_status_attach2">
+                <h2>ゲームサーバー稼働状況</h2>
+                    <div class="block_info_target">
+                        <span class="t_title">Login Server</span>
+                        <span class="t_detail"><img src="https://status.a-marsh.net/api/badge/2/status?upLabel=稼働中&downLabel=メンテナンス中" /></span>
                     </div>
                     <hr>
-                    <div class="info_status_block">
-                        <p class="info_status_target">lobby</p>
-                        <img src="https://status.a-marsh.net/api/badge/2/status?upLabel=稼働中&downLabel=メンテナンス中" />
+                    <div class="block_info_target">
+                        <span class="t_title">lobby</span>
+                        <span class="t_detail"><img src="https://status.a-marsh.net/api/badge/2/status?upLabel=稼働中&downLabel=メンテナンス中" /></span>
                     </div>
-                    <div class="info_status_block">
-                        <p class="info_status_target">s1-ogss</p>
-                        <img src="https://status.a-marsh.net/api/badge/9/status?upLabel=稼働中&downLabel=メンテナンス中" />
+                    <div class="block_info_target">
+                        <span class="t_title">s1-ogss</span>
+                        <span class="t_detail"><img src="https://status.a-marsh.net/api/badge/9/status?upLabel=稼働中&downLabel=メンテナンス中" /></span>
                     </div>
-                    <div class="info_status_block">
-                        <p class="info_status_target">s2-edion</p>
-                        <img src="https://status.a-marsh.net/api/badge/10/status?upLabel=稼働中&downLabel=メンテナンス中" />
+                    <div class="block_info_target">
+                        <span class="t_title">s2-edion</span>
+                        <span class="t_detail"><img src="https://status.a-marsh.net/api/badge/10/status?upLabel=稼働中&downLabel=メンテナンス中" /></span>
                     </div>
-                </div>
-            </div>
+            </li>
         </ul>
         <ul>
             <h1>Webmap: Live</h1>
@@ -65,7 +66,6 @@
                 </a>
             </li>
         </ul>
-
         <ul>
             <h1>Webmap: Dev</h1>
             <li>
@@ -75,7 +75,6 @@
                 </a>
             </li>
         </ul>
-
         <ul class="backbtn">
             <a href="https://portal.a-marsh.net/" alt="Portalサイトに戻ります" >
                     <img src="../images/back.svg" width="30" />
@@ -83,7 +82,12 @@
         </ul>
     </body>
     <footer>
-        <p><img src="../images/github.svg" width="10" /> <a href="https://github.com/AhiruMarsh/web-portal/">Source</a></p>
+        <p>
+            <a href="https://github.com/AhiruMarsh/web-portal/">
+                <img src="../images/github.svg" width="10" />
+                Source
+            </a>
+        </p>
         <p>© 2022 AhiruMarsh</p>
     </footer>
 </html>
