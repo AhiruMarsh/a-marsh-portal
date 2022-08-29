@@ -87,6 +87,14 @@ footer > p > a {
     text-decoration: none;
 }
 
+footer > p > a > img {
+    filter: invert(var(--btn-img-hover-iv));  
+}
+
+footer > p > a:hover > img {
+    filter: invert(var(--btn-img-iv));     
+}
+
 ul {
     margin: 0 auto;
     padding: 1em 2em;
@@ -148,13 +156,13 @@ ul li[class^="block_info"] {
 ul li[class^="block_info_blue"] {
     background-color: #0d6efd;
     color: #f5f5f5; 
-    border: 1.5px solid #0d6efd;
+    border: 1.5px solid #f5f5f5;
 }
 
 ul li[class^="block_info_red"] {
     background-color: #dc143c;
     color: #f5f5f5;
-    border: 1.5px solid #dc143c;
+    border: 1.5px solid #f5f5f5;
 }
 
 ul li[class^="block_info_status"] {
@@ -194,14 +202,40 @@ ul li[class^="block_info"] h2 {
     margin: 1em;
     font-size: 1em;
     font-weight: bold;
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
+    gap: 0.5em;
+}
+
+ul li[class^="block_info"] img:not(.colored) {
+    filter: invert(var(--btn-img-hover-iv)); 
+}
+
+ul li[class^="block_info_blue"] img:not(.colored) {
+    filter: invert(0);
+}
+
+ul li[class^="block_info_red"] img:not(.colored) {
+    filter: invert(0);
 }
 
 ul li[class^="block_info"] p {
     margin: 1em;
     font-size: 0.8em;
     text-align: left;
+    gap: 1em;
+}
+
+ul li[class^="block_info"] p.status_tips {
+    font-size: 0.5em;
+    color: var(--main-text-h2);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
 
 ul li[class^="block_info"] .block_info_target {
@@ -209,12 +243,17 @@ ul li[class^="block_info"] .block_info_target {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     font-size: 0.8em;
 }
 
 .t_title {
     font-size: 1em;
     font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
 }
 
 a {
@@ -229,6 +268,10 @@ hr {
     margin: 1em;
 }
 
+hr.status_list {
+    margin: 0em 2em;
+}
+
 .backbtn {
     display: flex;
     flex-direction: column;
@@ -238,6 +281,8 @@ hr {
     transition: all 0.3s ease;
 }
 
+/*
 .backbtn > a > img:hover {
     transform: rotate( -30deg );
 }
+*/

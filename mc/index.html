@@ -9,59 +9,61 @@
     </head>
     <body>
         <header>
+            <img src="../images/logo/toa_ru_.jpg" />
             <h1>mc.a-marsh.net</h1>
+            <p>利用するサービスを選択してください</p>
         </header>
         <ul>
-            <li class="block_info">
-                <h2>定期メンテナンス</h2>
-                <p>下記日時の期間において、インフラ機器のメンテナンス作業を実施しています。<br>メンテナンス作業中は、対象サービスを利用することができません。</p>
-                <div class="block_info_target">
-                    <span class="t_title">実施日時</span>
-                    <span class="t_detail">随時 08:00 〜 08:15</span>
-                </div>
-                <div class="block_info_target">
-                    <span class="t_title">対象</span>
-                    <span class="t_detail">Login Server</span>
-                </div>
-            </li>
             <li class="btn_status_attach1">
                 <a href="https://status.a-marsh.net/" target="_blank">
-                    <img src="../images/info.svg" width="20" />
+                    <img src="../images/common/info.svg" width="20" />
                     Service Status
                 </a>
             </li>
             <li class="block_info_status_attach2">
-                <h2>ゲームサーバー稼働状況</h2>
+                <h2><img src="../images/common/sync.svg" width="20" />ゲームサーバー稼働状況</h2>
                     <div class="block_info_target">
-                        <span class="t_title">Login Server</span>
-                        <span class="t_detail"><img src="https://status.a-marsh.net/api/badge/2/status?upLabel=稼働中&downLabel=メンテナンス中" /></span>
+                        <span class="t_title">サーバー名</span>
+                        <span class="t_detail">状態</span>
                     </div>
-                    <hr>
+                    <hr class="status_list">
                     <div class="block_info_target">
-                        <span class="t_title">lobby</span>
-                        <span class="t_detail"><img src="https://status.a-marsh.net/api/badge/2/status?upLabel=稼働中&downLabel=メンテナンス中" /></span>
+                        <span class="t_title">(Login Server)<img src="../images/status/restart.svg" width="15" /></span>
+                        <span class="t_detail"><img src="https://status.a-marsh.net/api/badge/2/status?upLabel=稼働中&downLabel=メンテナンス中" class="colored" /></span>
+                    </div>
+                    <div class="block_info_target">
+                        <span class="t_title">lobby<img src="../images/status/restart.svg" width="15" /></span>
+                        <span class="t_detail"><img src="https://status.a-marsh.net/api/badge/2/status?upLabel=稼働中&downLabel=メンテナンス中" class="colored" /></span>
                     </div>
                     <div class="block_info_target">
                         <span class="t_title">s1-ogss</span>
-                        <span class="t_detail"><img src="https://status.a-marsh.net/api/badge/9/status?upLabel=稼働中&downLabel=メンテナンス中" /></span>
+                        <span class="t_detail"><img src="https://status.a-marsh.net/api/badge/9/status?upLabel=稼働中&downLabel=メンテナンス中" class="colored" /></span>
                     </div>
                     <div class="block_info_target">
-                        <span class="t_title">s2-edion</span>
-                        <span class="t_detail"><img src="https://status.a-marsh.net/api/badge/10/status?upLabel=稼働中&downLabel=メンテナンス中" /></span>
+                        <span class="t_title">s2-edion<img src="../images/status/scheduled.svg" width="15" /></span>
+                        <span class="t_detail"><img src="https://status.a-marsh.net/api/badge/10/status?upLabel=稼働中&downLabel=メンテナンス中" class="colored" /></span>
                     </div>
+                <div class="block_info_target">
+                    <span class="t_title">dev-s1<img src="../images/status/locked.svg" width="15" /></span>
+                    <span class="t_detail"><img src="https://status.a-marsh.net/api/badge/12/status?upLabel=稼働中&downLabel=メンテナンス中" class="colored" /></span>
+                </div>
+                    <hr class="status_list">
+                <p class="status_tips"><img src="../images/status/restart.svg" width="15" />不定期メンテナンス実施(08:00-08:15)
+                    <br><img src="../images/status/scheduled.svg" width="15" />期間限定
+                    <br><img src="../images/status/locked.svg" width="15" />移動制限あり</p>
             </li>
         </ul>
         <ul>
-            <h1>Webmap: Live</h1>
+            <h1>Webmap</h1>
             <li>
                 <a href="https://mcmap-s1.a-marsh.net/" target="_blank">
-                    <img src="../images/local.svg" width="20" />
+                    <img src="../images/icon/maps.svg" width="20" />
                     s1-ogss
                 </a>
             </li>
             <li>
                 <a href="https://mcmap-s2.a-marsh.net/" target="_blank">
-                    <img src="../images/local.svg" width="20" />
+                    <img src="../images/icon/maps.svg" width="20" />
                     s2-edion
                 </a>
             </li>
@@ -70,21 +72,21 @@
             <h1>Webmap: Dev</h1>
             <li>
                 <a href="https://mcmap-dev-s1.a-marsh.net/" target="_blank">
-                    <img src="../images/local.svg" width="20" />
+                    <img src="../images/icon/maps.svg" width="20" />
                     dev-s1
                 </a>
             </li>
         </ul>
         <ul class="backbtn">
             <a href="https://portal.a-marsh.net/" alt="Portalサイトに戻ります" >
-                    <img src="../images/back.svg" width="30" />
+                    <img src="../images/common/home.svg" width="30" />
             </a> 
         </ul>
     </body>
     <footer>
         <p>
             <a href="https://github.com/AhiruMarsh/web-portal/">
-                <img src="../images/github.svg" width="10" />
+                <img src="../images/logo/github.svg" width="10" />
                 Source
             </a>
         </p>
