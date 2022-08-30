@@ -229,6 +229,7 @@ ul li[class^="block_info"] p {
 }
 
 ul li[class^="block_info"] p.status_tips {
+    margin: 1em 4em;
     font-size: 0.5em;
     color: var(--main-text-h2);
     display: flex;
@@ -252,12 +253,17 @@ ul li[class^="block_info"] .block_info_target {
     font-weight: bold;
     display: flex;
     flex-direction: row;
-    align-items: center;
-    gap: 2em;
+    gap: 1em;
+}
+
+.t_title > a {
+    display: block;
+    height: 15px;
 }
 
 a {
     color: var(--main-text);
+    text-decoration: none;
 }
 
 a:hover {
