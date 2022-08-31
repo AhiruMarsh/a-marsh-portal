@@ -91,10 +91,6 @@ footer > p > a > img {
     filter: invert(var(--btn-img-hover-iv));  
 }
 
-footer > p > a:hover > img {
-    filter: invert(var(--btn-img-iv));     
-}
-
 ul {
     margin: 0 auto;
     padding: 1em 2em;
@@ -267,7 +263,7 @@ a {
 }
 
 a:hover {
-    color: var(--main-text-hover);
+    color: var(--main-text-h2);
 }
 
 hr {
