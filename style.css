@@ -19,7 +19,7 @@
       --main-bg: #212529;
       --main-status-color: #3cb371;
       --btn-color: #fff;
-      --btn-color-hover: #000;
+      --btn-color-hover: #000a;
       --btn-out-color: #f5f5f5;
       --btn-img-iv: 1;
       --btn-img-hover-iv: 0;
@@ -110,17 +110,38 @@ ul > h1 {
     border-radius: 1em;
 }
 
+ul > p {
+    display: inline;
+    padding: 0 2em;
+    color: var(--main-text-h2);
+    font-size: 0.5em;
+}
+
 ul li {
     margin: 1.5em 0;
     background-color: var(--btn-color);
-    border: 1.5px solid var(--btn-color);
+    border: 1.5px solid var(--btn-out-color);
     border-radius: 1em;
     transition: all .3s ease;
 }
 
 ul li:hover {
     background-color: var(--main-bg);
+}
+
+ul li.unlink {
+    background-color: var(--main-bg);
     border: 1.5px solid var(--btn-out-color);
+}
+
+ul li.unlink > a {
+    color: var(--main-text);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+ul li.unlink > a > img {
+    filter: invert(var(--btn-img-hover-iv));
 }
 
 ul li[class$="attach1"] {
