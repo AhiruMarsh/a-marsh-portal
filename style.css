@@ -100,6 +100,7 @@ ul {
 }
 
 ul > h1 {
+    margin: 0 auto;
     padding: 0.3em 0.6em;
     display: inline-block;
     color: var(--main-text);
@@ -149,18 +150,32 @@ ul li[class$="attach1"] {
     border-radius: 1em 1em 0 0;
 }
 
-ul li[class^="btn_status"] {
+ul li[class^="btn_green"] {
     background-color: var(--main-status-color);
     border: 1.5px solid var(--main-status-color); 
 }
     
-ul li[class^="btn_status"]:hover {
+ul li[class^="btn_green"]:hover {
     background-color: var(--main-bg);
     border: 1.5px solid var(--main-status-color);   
 }
     
-ul li[class^="btn_status"]:hover > a {
+ul li[class^="btn_green"]:hover > a {
     color: var(--main-status-color);
+}
+
+ul li[class^="btn_blue"] {
+    background-color: #0d6efd;
+    border: 1.5px solid #0d6efd; 
+}
+    
+ul li[class^="btn_blue"]:hover {
+    background-color: var(--main-bg);
+    border: 1.5px solid #0d6efd;   
+}
+    
+ul li[class^="btn_blue"]:hover > a {
+    color: #0d6efd;
 }
 
 ul li[class^="block_info"] {
