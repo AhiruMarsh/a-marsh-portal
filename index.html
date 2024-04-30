@@ -13,43 +13,47 @@
         <script type="text/javascript" src="js/theme.js"></script>
         <script type="text/javascript" src="js/setCopyrightYear.js"></script>
     </head>
-    <body class="bg-body-tertiary container-sm" style="max-width: 700px;">
-        <header class="py-2">
-            <div class="float-end">
-                <a href="javascript:switchTheme();" class="btn btn-lg btn-switch-theme" role="button">
-                    <i class="bi bi-moon-stars-fill"></i>
-                </a>
+    <body>
+        <header class="pt-2 bg-body">
+            <div class="container-sm" style="max-width: 700px;">
+                <div class="d-flex justify-content-end align-items-center flex-wrap">
+                    <a href="javascript:switchTheme();" class="btn btn-lg btn-switch-theme" role="button">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </a>
+                </div>
+                <div class="py-5 gap-2 text-center align-items-center justify-content-center">
+                    <img class="rounded-pill mb-3" src="./images/logo/marsh.jpg" width="100"/>
+                    <h1 class="display-5 fw-bold text-shadow">Welcome to a-marsh.net</h1>
+                    <p id="motd" class="text-white-20 text-shadow">利用するサービスを選択してください</p>
+                </div>
             </div>
         </header>
-        <main>
-            <div class="py-5 gap-2 text-center align-items-center justify-content-center">
-                <img class="rounded-pill mb-3" src="./images/logo/marsh.jpg" width="100"/>
-                <h1 class="display-6">Welcome to a-marsh.net</h1>
-                <p class="text-body-tertiary">利用するサービスを選択してください</p>
-            </div>
-            <div class="d-grid pb-5 gap-4 mx-auto">
-                <a href="https://a-marsh.cloudflareaccess.com" target="_blank" class="btn btn-lg btn-dark rounded-4" role="button">
-                    <i class="bi me-2 bi-cloud-fill"></i>
-                    App Launcher
-                </a>
-                <a href="https://nght05.a-marsh.net" target="_blank" class="btn btn-lg btn-dark rounded-4" role="button">
-                    <i class="bi me-2 bi-folder-fill"></i>
-                    NAS
-                </a>
-                <a href="https://status.a-marsh.net/" target="_blank" class="btn btn-lg btn-success rounded-4" role="button">
-                    <i class="bi me-2 bi-heart-pulse-fill"></i>
-                    Service Status
-                </a>
-            </div>
-            <h2 class="h3">Links</h2>
-            <div class="d-grid pb-5 gap-4 mx-auto">
-                <a href="./mc/" target="_blank" class="btn btn-lg btn-dark rounded-4" role="button">
-                    <i class="bi me-2 bi-box-arrow-up-right"></i>
-                    mc.a-marsh.net
-                </a>
+        <main class="pt-5 bg-body">
+            <div class="container-sm" style="max-width: 700px;">
+                <div class="d-grid pb-5 gap-4 mx-auto">
+                    <a href="https://a-marsh.cloudflareaccess.com" target="_blank" class="btn btn-lg btn-dark rounded-4" role="button">
+                        <i class="bi me-2 bi-cloud-fill"></i>
+                        App Launcher
+                    </a>
+                    <a href="https://nght05.a-marsh.net" target="_blank" class="btn btn-lg btn-dark rounded-4" role="button">
+                        <i class="bi me-2 bi-folder-fill"></i>
+                        NAS
+                    </a>
+                    <a href="https://status.a-marsh.net/" target="_blank" class="btn btn-lg btn-success rounded-4" role="button">
+                        <i class="bi me-2 bi-heart-pulse-fill"></i>
+                        Service Status
+                    </a>
+                </div>
+                <h2 class="h5">Links</h2>
+                <div class="d-grid pb-5 gap-4 mx-auto">
+                    <a href="./mc/" class="btn btn-lg btn-dark rounded-4" role="button">
+                        <i class="bi me-2 bi-box-arrow-up-right"></i>
+                        mc.a-marsh.net
+                    </a>
+                </div>
             </div>
         </main>
-        <footer class="py-5 gap-2 text-center text-body-secondary" style="font-size: 15px;">
+        <footer class="py-5 gap-2 text-center bg-body" style="font-size: 15px;">
             <p>
                 <a href="https://github.com/AhiruMarsh/web-portal/"><i class="bi me-1 bi-github"></i>Source</a>
             </p>
