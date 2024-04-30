@@ -23,12 +23,21 @@ body, html {
     }
 }
 
+.bg-body-tertiary {
+  --bs-body-bg: var(--bs-white);
+}
+
 .btn-dark {
   --bs-btn-bg: var(--btn-black);
   --bs-btn-color: var(--bs-white);
   --bs-btn-hover-color: var(--btn-black);
   --bs-btn-hover-bg: var(--bs-white);
   --bs-btn-hover-border-color: 1.5px solid var(--bs-btn-border-color);
+}
+
+.table-light {
+  --bs-table-bg: var(--bs-white);
+  --bs-table-color: var(--bs-body-color);
 }
 
 [data-bs-theme="dark"] .btn-switch-theme {
