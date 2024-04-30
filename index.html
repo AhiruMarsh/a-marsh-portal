@@ -1,84 +1,65 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" data-bs-theme="light">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>PORTAL</title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <link rel="icon" href="favicon.ico" />
-        <link rel="stylesheet" href="style.css" />
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script type="text/javascript" src="main.js"></script>
+        <link rel="stylesheet" href="override.css" />
+        <script type="text/javascript" src="js/theme.js"></script>
+        <script type="text/javascript" src="js/setCopyrightYear.js"></script>
     </head>
     <body>
-        <header>
-            <img src="./images/logo/marsh.jpg" />
-            <h1>Welcome to a-marsh.net</h1>
-            <p>利用するサービスを選択してください</p>
+        <header class="pt-2 bg-body">
+            <div class="container-sm" style="max-width: 700px;">
+                <div class="d-flex justify-content-end align-items-center flex-wrap">
+                    <a href="javascript:switchTheme();" class="btn btn-lg btn-switch-theme" role="button">
+                        <i class="bi bi-moon-stars-fill"></i>
+                    </a>
+                </div>
+                <div class="py-5 gap-2 text-center align-items-center justify-content-center">
+                    <img class="rounded-pill mb-3" src="./images/logo/marsh.jpg" width="100"/>
+                    <h1 class="display-5 fw-bold text-shadow">Welcome to a-marsh.net</h1>
+                    <p id="motd" class="text-white-20 text-shadow">利用するサービスを選択してください</p>
+                </div>
+            </div>
         </header>
-        <ul id="sec10">
-            <li>
-                <a href="https://a-marsh.cloudflareaccess.com" target="_blank">
-                    <img src="./images/logo/cloudflare.svg" width="20" />
-                    App Launcher
-                </a>
-            </li>
-            <li>
-                <a href="https://nght05.a-marsh.net" target="_blank">
-                    <img src="./images/icon/folder.svg" width="20" />
-                    NAS
-                </a>
-            </li>
-            <li class="btn_green">
-                <a href="https://status.a-marsh.net/" target="_blank">
-                    <img src="./images/common/info.svg" width="20" />
-                    Service Status
-                </a>
-            </li>
-        </ul>      
-        <ul id="sec20">
-            <h1>Links</h1>
-            <li>
-                <a href="./mc/">
-                    <img src="./images/icon/news.svg" width="20" />
-                    mc.a-marsh.net
-                </a>
-            </li>
-            <li>
-                <a href="./cockpit/" target="_blank">
-                    <img src="./images/icon/cockpit.svg" width="20" />
-                    Cockpit
-                </a>
-            </li>
-            <li>
-                <a href="https://help.teams.cloudflare.com/" target="_blank">
-                    <img src="./images/logo/cloudflare.svg" width="20" />
-                    WARP Check
-                </a>
-            </li>
-        </ul>
-        <ul id="sec30">
-            <h1>Download</h1>
-            <li class="btn_blue">
-                <a href="https://get.teamviewer.com/6c2yh6r">
-                    <img src="./images/common/download.svg" width="20" />
-                    QuickSupport
-                </a>
-            </li>
-        </ul>
-        <footer>
+        <main class="pt-5 bg-body">
+            <div class="container-sm" style="max-width: 700px;">
+                <div class="d-grid pb-5 gap-4 mx-auto">
+                    <a href="https://a-marsh.cloudflareaccess.com" target="_blank" class="btn btn-lg btn-dark rounded-4" role="button">
+                        <i class="bi me-2 bi-cloud-fill"></i>
+                        App Launcher
+                    </a>
+                    <a href="https://nght05.a-marsh.net" target="_blank" class="btn btn-lg btn-dark rounded-4" role="button">
+                        <i class="bi me-2 bi-folder-fill"></i>
+                        NAS
+                    </a>
+                    <a href="https://status.a-marsh.net/" target="_blank" class="btn btn-lg btn-success rounded-4" role="button">
+                        <i class="bi me-2 bi-heart-pulse-fill"></i>
+                        Service Status
+                    </a>
+                </div>
+                <h2 class="h5">Links</h2>
+                <div class="d-grid pb-5 gap-4 mx-auto">
+                    <a href="./mc/" class="btn btn-lg btn-dark rounded-4" role="button">
+                        <i class="bi me-2 bi-box-arrow-up-right"></i>
+                        mc.a-marsh.net
+                    </a>
+                </div>
+            </div>
+        </main>
+        <footer class="py-5 gap-2 text-center bg-body" style="font-size: 15px;">
             <p>
-                <a href="https://github.com/AhiruMarsh/web-portal/">
-                    <img src="../images/logo/github.svg" width="10" />
-                    Source
-                </a>
-                ｜
-                Icons by
-                <a href="https://icons8.com/">
-                    <img src="../images/logo/icon8.svg" width="10" />
-                    icon8
-                </a>
+                <a href="https://github.com/AhiruMarsh/web-portal/"><i class="bi me-1 bi-github"></i>Source</a>
             </p>
-            <p>&copy; <script>document.write(new Date().getFullYear());</script> AhiruMarsh</p>
+            <p>
+                &copy; <script>setCopyrightYear(2022);</script> AhiruMarsh
+            </p>
         </footer>
     </body>
 </html>

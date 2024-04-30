@@ -3,116 +3,125 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>mc.a-marsh.net - PORTAL</title>
+        <title>PORTAL</title>
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <link rel="icon" href="../favicon.ico" />
-        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="../override.css" />
+        <script type="text/javascript" src="../js/theme.js"></script>
+        <script type="text/javascript" src="../js/setCopyrightYear.js"></script>
     </head>
-    <body>
-        <header>
-            <img src="../images/logo/toa_ru_.jpg" />
-            <h1>mc.a-marsh.net</h1>
-            <p></p>
+    <body class="bg-body container-sm" style="max-width: 700px;">
+        <header class="py-2">
+            <div class="d-flex justify-content-between align-items-center">
+                <a href="/" class="btn btn-lg" role="button">
+                    <i class="bi bi-house-fill"></i>
+                </a>
+                <img class="rounded-pill" src="../images/logo/marsh.jpg" width="45" height="45"/>
+                <a href="javascript:switchTheme();" class="btn btn-lg btn-switch-theme" role="button">
+                    <i class="bi bi-moon-stars-fill"></i>
+                </a>
+            </div>
+            <div class="py-3 text-center align-items-center justify-content-center">
+                <h1 class="h3 fw-light">mc.a-marsh.net</h1>
+            </div>
         </header>
-        <ul id="sec10">
-            <li class="btn_green_attach1">
-                <a href="https://status.a-marsh.net/status/mc" target="_blank">
-                    <img src="../images/common/info.svg" width="20" />
+        <main>
+            <div class="container-md d-grid pb-5 gap-4 mx-auto">
+                <ul class="list-group list-group-flush">
+                    <li class="d-flex list-group-item align-items-center">
+                        <div class="p-2 me-auto">
+                            ログインサーバ
+                        </div>
+                        <div class="p-2">
+                            <img src="https://status.a-marsh.net/api/badge/2/status?upLabel=稼働中&downLabel=停止&pendingLabel=混雑&maintenanceLabel=メンテナンス中&label=" class="colored" />
+                        </div>
+                    </li>
+                    <li class="d-flex list-group-item align-items-center">
+                        <div class="p-2 me-auto">
+                            <i class="bi me-2 bi-door-open-fill"></i>
+                            Lobby
+                        </div>
+                        <div class="p-2">
+                            <img src="https://status.a-marsh.net/api/badge/15/status?upLabel=稼働中&downLabel=停止&pendingLabel=混雑&maintenanceLabel=メンテナンス中&label=" class="colored" />
+                        </div>
+                    </li>
+                    <li class="d-flex list-group-item align-items-center">
+                        <div class="p-2 me-auto">
+                            <i class="bi me-2 bi-server"></i>
+                            <a class="icon-link icon-link-hover" href="https://maps-mc101.a-marsh.net/" target="_blank" aria-hidden="true">
+                                Ogss
+                            </a>
+                        </div>
+                        <div class="p-2">
+                            <i class="bi bi-compass-fill text-primary"></i>
+                        </div>
+                        <div class="p-2">
+                            <img src="https://status.a-marsh.net/api/badge/9/status?upLabel=稼働中&downLabel=停止&pendingLabel=混雑&maintenanceLabel=メンテナンス中&label=" class="colored" />
+                        </div>
+                    </li>
+                    <li class="d-flex list-group-item align-items-center">
+                        <div class="p-2 me-auto">
+                            <i class="bi me-2 bi-server"></i>
+                            <a class="icon-link icon-link-hover" href="https://maps-mc102.a-marsh.net/" target="_blank" aria-hidden="true">
+                                Edion
+                            </a>
+                        </div>
+                        <div class="p-2">
+                            <i class="bi bi-compass-fill text-primary"></i>
+                        </div>
+                        <div class="p-2">
+                            <img src="https://status.a-marsh.net/api/badge/10/status?upLabel=稼働中&downLabel=停止&pendingLabel=混雑&maintenanceLabel=メンテナンス中&label=" class="colored" />
+                        </div>
+                    </li>
+                    <li class="d-flex list-group-item align-items-center">
+                        <div class="p-2 me-auto">
+                            <i class="bi me-2 bi-server"></i>
+                            d-rosalina
+                        </div>
+                        <div class="p-2">
+                            <i class="bi bi-shield-lock-fill text-danger"></i>
+                        </div>
+                        <div class="p-2">
+                            <img src="https://status.a-marsh.net/api/badge/12/status?upLabel=稼働中&downLabel=停止&pendingLabel=混雑&maintenanceLabel=メンテナンス中&label=" class="colored" />
+                        </div>
+                    </li>
+                    <li class="d-flex list-group-item align-items-center">
+                        <div class="p-2 me-auto">
+                            <i class="bi me-2 bi-server"></i>
+                            d-luma
+                        </div>
+                        <div class="p-2">
+                            <i class="bi bi-shield-lock-fill text-danger"></i>
+                        </div>
+                        <div class="p-2">
+                            <img src="https://status.a-marsh.net/api/badge/12/status?upLabel=稼働中&downLabel=停止&pendingLabel=混雑&maintenanceLabel=メンテナンス中&label=" class="colored" />
+                        </div>
+                    </li>
+                    <li class="list-group-item align-items-center text-center" style="font-size: 12px;">
+                        <p class="">
+                            <i class="bi me-2 bi-compass-fill text-primary"></i><span class="text-body-secondary">Webマップ利用可能 (選択で移動)</span><br>
+                            <i class="bi me-2 bi-shield-lock-fill text-danger"></i><span class="text-body-secondary">移動制限中</span>
+                        </p>
+                    </li>
+                  </ul>
+            </div>
+            <div class="d-grid pb-5 gap-4 mx-auto">
+                <a href="https://status.a-marsh.net/status/mc" target="_blank" class="btn btn-lg btn-success rounded-4" role="button">
+                    <i class="bi me-2 bi-heart-pulse-fill"></i>
                     Service Status
                 </a>
-            </li>
-            <li class="block_info_status_attach2">
-                <h2><img src="../images/common/sync.svg" width="20" />ゲームサーバー稼働状況</h2>
-                <p class="status_tips">
-                    <img src="https://status.a-marsh.net/api/badge/2/status?upLabel=稼働中&downLabel=停止&pendingLabel=混雑&maintenanceLabel=メンテナンス中&label=" class="colored" />
-                </p>
-                    <div class="block_info_target">
-                        <span class="t_title"><img src="../images/icon/maps.svg" width="15" />サーバー名</span>
-                        <span class="t_detail">状態</span>
-                    </div>
-                    <hr class="status_list">
-                    <div class="block_info_target">
-                        <span class="t_title">
-                            <img src="../images/common/none.svg" width="15" />
-                            Lobby
-                        </span>
-                        <span class="t_detail">
-                            <img src="https://status.a-marsh.net/api/badge/15/status?upLabel=稼働中&downLabel=停止&pendingLabel=混雑&maintenanceLabel=メンテナンス中&label=" class="colored" />
-                        </span>
-                    </div>
-                    <div class="block_info_target">
-                        <span class="t_title">
-                            <a href="https://maps-mc101.a-marsh.net/" target="_blank"><img src="../images/icon/maps.svg" width="15" /></a>
-                            Ogss
-                        </span>
-                        <span class="t_detail">
-                            <img src="https://status.a-marsh.net/api/badge/9/status?upLabel=稼働中&downLabel=停止&pendingLabel=混雑&maintenanceLabel=メンテナンス中&label=" class="colored" />
-                        </span>
-                    </div>
-                    <div class="block_info_target">
-                        <span class="t_title">
-                            <a href="https://maps-mc102.a-marsh.net/" target="_blank"><img src="../images/icon/maps.svg" width="15" /></a>
-                            Edion
-                        </span>
-                        <span class="t_detail">
-                            <img src="https://status.a-marsh.net/api/badge/10/status?upLabel=稼働中&downLabel=停止&pendingLabel=混雑&maintenanceLabel=メンテナンス中&label=" class="colored" />
-                        </span>
-                    </div>
-                    <div class="block_info_target">
-                        <span class="t_title">
-                            <a href="https://maps-mc901.a-marsh.net/" target="_blank"><img src="../images/status/locked.svg" width="15" /></a>
-                            d-rosalina
-                        </span>
-                        <span class="t_detail">
-                            <img src="https://status.a-marsh.net/api/badge/12/status?upLabel=稼働中&downLabel=停止&pendingLabel=混雑&maintenanceLabel=メンテナンス中&label=" class="colored" />
-                        </span>
-                    </div>
-                <hr class="status_list">
-                <p class="status_tips">
-                    <img src="../images/icon/maps.svg" width="15" />Webマップ利用可
-                    <br><img src="../images/status/locked.svg" width="15" />移動制限中
-                    <br><img src="../images/status/colored/ng.svg" width="15" class="colored" />移動不可</p>
-            </li>
-            <li class="unlink">
-                <a href="#">
-                    <img src="../images/status/scheduled.svg" width="20" />
-                    Maintenance
-                </a>
-            </li>
-        </ul>
-        <ul id="sec20">
-            <h1>Webmap</h1>
-            <li>
-                <a href="https://maps-mc101.a-marsh.net/" target="_blank">
-                    <img src="../images/icon/maps.svg" width="20" />
-                    Ogss
-                </a>
-            </li>
-            <li>
-                <a href="https://maps-mc102.a-marsh.net/" target="_blank">
-                    <img src="../images/icon/maps.svg" width="20" />
-                    Edion
-                </a>
-            </li>
-        </ul>
-        <ul class="backbtn">
-            <a href="https://portal.a-marsh.net/" alt="Portalサイトに戻ります" >
-                    <img src="../images/common/home.svg" width="30" />
-            </a> 
-        </ul>
-        <footer>
+            </div>
+        </main>
+        <footer class="py-5 gap-2 text-center" style="font-size: 15px;">
             <p>
-                <a href="https://github.com/AhiruMarsh/web-portal/">
-                    <img src="../images/logo/github.svg" width="10" />
-                    Source
-                </a>
-                ｜
-                Icons by
-                <a href="https://icons8.com/">
-                    <img src="../images/logo/icon8.svg" width="10" />
-                    icon8
-                </a>
+                <a href="https://github.com/AhiruMarsh/web-portal/"><i class="bi me-1 bi-github"></i>Source</a>
             </p>
-            <p>&copy; <script>document.write(new Date().getFullYear());</script> AhiruMarsh</p>
+            <p>
+                &copy; <script>setCopyrightYear(2022);</script> AhiruMarsh
+            </p>
         </footer>
     </body>
 </html>
